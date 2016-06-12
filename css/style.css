@@ -1,0 +1,235 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline
+}
+.button,#main-content table tfoot td .bulk-actions select,form input.textInput,.pagination a,.pagination .current,.pagination .disabled,form input,form div.filed label
+{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px
+}
+div.operation
+{
+	text-align: right;
+}
+#main-content ul li.navigation
+{
+	font-size: 20px;
+}
+form div.filed label
+{padding:3px;
+font-size:13px;
+text-align: center;
+border:1px solid #d5d5d5;color:#333;
+width: 100px;
+height: 25px;
+}
+a
+{color:#57a000;text-decoration:none;cursor: pointer;}
+a:hover{color:#000;text-decoration: none;}
+a:active{color:#777}
+a:focus{outline:1px}
+strong{font-weight:bold;color:#333}
+small{font-size:0.85em}
+pre{font-family:monospace}
+p{padding:5px 0 10px 0;line-height:1.6em}
+.clear{clear:both}
+.align-left{float:left}
+.align-right{float:right}
+a.remove-link{color:#bb0000}
+a.remove-link:hover
+{color:#000}
+:focus{outline:0}
+.shortcut-button span
+{
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px
+}
+html
+{font-size:100%;height:100%;margin-bottom:1px}
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#555;
+	background:#f0f0f0 url(../images/bg-body.gif) top left repeat-y;
+	background-size: 200px;
+	font-size:12px;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-family:Helvetica, Arial, sans-serif;
+	color:#222;
+	font-weight:bold
+}
+h1
+{
+	font-family:Calibri, Helvetica, Arial, sans-serif;
+	font-size:31px;
+	font-weight:bold;
+	color:#fff;
+	position:absolute;top:-1000px
+}
+h2
+{
+	font-size:26px;
+	padding:0 0 10px 0
+}
+h3
+{
+	font-size:17px;
+	padding:0 0 10px 0
+}
+ol,ul{
+	list-style:none;
+}
+.button
+{font-family:Verdana, Arial, sans-serif;
+	display:inline-block;
+	background:#459300 url(../images/bg-button-green.gif) top left repeat-x !important;
+	border:1px solid #459300 !important;
+	padding:4px 7px 4px 7px !important;
+	color:#fff !important;font-size:12px !important;
+	cursor:pointer}
+.button:hover
+{text-decoration:underline}
+.button:active
+{padding:5px 7px 3px 7px !important}a.remove-link{color:#bb0000}
+.clear{clear:both}
+form input.textInput
+{
+	padding:6px;
+	font-size:13px;
+	border:1px solid #d5d5d5;
+	color:#333
+}
+form .small-input{width:230px;}
+form .medium-input{width:350px}
+form .large-input{width:97.5% !important;font-size:16px !important;padding:8px !important}
+form input.text-input,form select,form textarea,form .wysiwyg{padding:6px;font-size:13px;border:1px solid #d5d5d5;color:#333}
+.shortcut-button span
+{
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px
+}
+body#login{color:#fff;background:#222 url(../images/bg-login.gif)}
+#body-wrapper #top{height: 100px;  position:absolute; background: #000 url(../images/bg-login.gif) repeat-x; width: 100%;}
+#body-wrapper #body-content{top: 100px;position:absolute; width: 100%;margin-bottom: 100px;}
+#loginWrapper #loginTop{width:100%;padding:140px 0 50px 0;text-align:center;background:url(../images/bg-login-top.png) top left repeat-x}
+#loginWrapper #loginContent{text-align:left;width:300px;height:300px;margin:0 auto}
+#loginWrapper #loginContent label{color:#fff;font-weight:normal;font-size:14px;font-family:Helvetica, Arial, sans-serif;float:left;width:70px;padding:0}
+#loginWrapper #loginContent input{width:200px;float:right;margin:0 0 20px 0;border:0;background:#fff}
+#loginWrapper #loginContent p{padding:0}
+#loginWrapper #loginContent p#rememberPassword{float:right}
+#loginWrapper #loginContent p#rememberPassword input{float:none;width:auto;border:0;background:none;margin:0 10px 0 0}
+#loginWrapper #loginContent p .button{width:auto;margin-top:20px}
+#page-intro{font-size:17px;padding:0 0 20px 0}
+.information{background:#dbe3ff url(../images/icons/information.png);border-color:#a2b4ee;color:#585b66}
+
+
+
+#footer{border-top:1px solid #ccc;margin:40px 0 0 0;padding:20px 0;font-size:12px}
+#main-content{margin:0 30px 0 230px;padding:40px 0 0 0;}
+.content-box{border:1px solid #ccc;margin:0 0 20px 0;background:#fff}
+.content-box-header{background:#e5e5e5 url(../images/bg-content-box.gif) top left repeat-x;margin-top:1px;height:40px}
+.content-box-header h3{padding:12px 15px 10px;float:left}
+ul.content-box-tabs{float:right;padding:12px 15px 0 0 !important;margin:0 !important}
+ul.content-box-tabs li{float:left;margin:0;padding:0 !important;background-image:none !important}
+ul.content-box-tabs li a{color:#333;padding:8px 10px;display:block;margin:1px;border-bottom:0}
+ul.content-box-tabs li a:hover{color:#57a000}ul.content-box-tabs li a.current{background:#fff;border:1px solid #ccc;border-bottom:0;margin:0}
+.content-box-content{padding:15px;font-size:13px;border-top:1px solid #ccc}
+#main-content ul,#main-content ol{padding:10px 0}
+#main-content ul.nav
+{
+	padding: 0px;
+	margin-top: -10px;
+	font-weight: bold;
+}
+div.operation form input.button
+{
+	margin:5px 60px 10px 0px;
+}
+#main-content ol{padding:0 0 0 24px}
+#main-content ol li{list-style:decimal;padding:4px 0}
+#main-content table{width:100%;border-collapse:collapse}
+#main-content table thead th{font-weight:bold;font-size:15px;border-bottom:1px solid #ddd}
+#main-content tbody{border-bottom:1px solid #ddd}
+#main-content tbody tr{background:#fff}
+#main-content tbody tr.alt-row{background:#f3f3f3}
+#main-content table td,#main-content table th{padding:10px;line-height:1.3em}
+#main-content table tfoot td .bulk-actions{padding:15px 0 5px 0}
+#main-content table tfoot td .bulk-actions select{padding:4px;border:1px solid #ccc}
+#main-content .pagination{text-align:right;padding:20px 0 5px 0;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;display: block;;}
+.pagination a,.pagination .disabled{margin:0 5px 0 0;padding:3px 6px;border:1px solid #ddd}
+.pagination .current{background:#469400 url(../images/bg-button-green.gif) top left repeat-x !important;margin:0 5px 0 0;padding:3px 6px;border:1px solid #ddd;border-color:#459300 !important;color:#fff !important}
+.shortcut-button{border:1px solid #ccc;background:#f7f7f7 url(../images/shortcut-button-bg.gif) top left no-repeat;display:block;width:120px;margin:0 0 20px 0}
+.shortcut-button span{border:1px solid #fff;display:block;padding:15px 10px 15px 10px;text-align:center;color:#555;font-size:13px;line-height:1.3em}
+.shortcut-button span img{margin-bottom:10px}.shortcut-button:hover{background:#fff}
+.shortcut-button span:hover{color:#57a000}
+ul.shortcut-buttons-set li{float:left;margin:0 15px 0 0;padding:0 !important;background:0}
+.operations{float:right;padding:13px 13px 13px 0}.operations a{font-size:14px;color:#003300}.operations a:hover{color:#57A000}
+.content-box,.content-box-header,ul.content-box-tabs li a.current,.shortcut-button,.notification
+{
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px
+}
+.content-box-header
+{
+	-moz-border-radius-bottomleft:0;
+	-moz-border-radius-bottomright:0;
+	-webkit-border-bottom-left-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0}
+.closed-box .content-box-header
+{
+	-moz-border-radius-bottomleft:
+	6px;-moz-border-radius-bottomright:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px
+}
+ul.content-box-tabs li a.current
+{
+	-moz-border-radius-bottomleft:0;
+	-moz-border-radius-bottomright:0;
+	-webkit-border-bottom-left-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0
+}
+fieldset{padding:15px 5px 5px 5px;border:#bbb dashed 1px}
+fieldset legend{font-weight:bold;color:#aaa}
+form div.filed
+{
+	float:left;
+}
+form div.field
+{
+	width:250px;
+	padding:5px 0 10px 0;
+	line-height:1em;
+	float:left;height:60px;
+	margin:0 10px 0 10px;
+}
+form.dict label
+{
+	display: block;
+	padding: 0 0 10px;
+	font-weight: bold;
+}

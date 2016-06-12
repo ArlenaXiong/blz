@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>登录 | 清溪物流保税中心</title>
+	<script type="text/javascript"></script>
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" >
+</head>
+<body id="login">
+	<div id="loginWrapper" class="png_bg">
+		<div id="loginTop">
+			<h1>清溪物流保税中心</h1>
+			<a href="/"><img src="../images/logo2.png" id="logo" alt="Qingxi logo" width="290" height="50"></a>
+		</div>		
+		<div id="loginContent">
+			<form>
+				<p>
+					<label  for="username">园区用户名</label>
+					<input type="text" class="textInput first-field" id="username" name="username"size="30"/>
+				</p>
+				<div class="clear"></div>
+				<p>
+					<label for="password">密码</label>
+					<input type="password" class="textInput" id="password" name="password" size="30"/>
+					
+				</p>
+				<div class="clear"></div>
+				<p class="errorInformation" style="text-align:right;font-size:15px;color:red">
+				</p>
+				<div class="clear"></div>
+				<p id="rememberPassword">
+					<input id="remember" type="checkbox" value="1">
+					记住我
+				</p>
+				<div class="clear"></div>
+				<p>
+					<input class="button" name="commit"  type="button" value="登录" id="submit">
+				</p>
+			</form>
+			
+		</div>
+	</div>
+	<script src="../js/jquery-1.10.2.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		 $("#submit").on('click',function(){
+			 var user = {
+	       		manager : {
+	          		username:$("#username").val(),
+	             	password:$("#password").val()
+	         		}};
+           			 $.ajax({
+				 type:"post",
+				 url: "loginAction.action",
+				 dataType:"json",
+               			 contentType : "application/json;charset=UTF-8",
+               			 data:JSON.stringify(user),
+				success: function() {
+					location.href="adminHomepage.html?username="+$("#username").val();
+					console.log(user.account.username);
+				},
+				error:function(){
+					$(".errorInformation").html("用户名或密码错误！");
+					/*alert("异常！")*/
+				}
+			});
+		});
+	</script>
+</body>
+</html>

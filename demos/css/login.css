@@ -1,0 +1,59 @@
+body{
+	background-color: #3b8e3c;
+}
+.wrapper{
+	background-color:rgba(36, 50, 55, 0.4);
+	position: absolute;
+	width: 50%;
+	height: 40%;
+	top: 28%;
+	left: 25%;
+	padding: 20px;
+}
+#loginForm p{
+	color: #fff;
+	height: 25%;
+	font-size: 25px;
+	margin-top: 10px;
+}
+#loginForm{
+	height: 100%;
+	width: 100%;
+}
+#loginForm h3{
+	color: #fff;
+	height: 20%;
+    font-size: 35px;
+}
+#loginForm input{
+	display: inline-block;
+	line-height: 25px;
+	float: left;
+	margin-left: 3%;
+	width: 60%;
+}
+#loginForm label{
+	float: left;
+	display: inline-block;
+	width: 10%;
+}
+#submit{
+	background-color: orange;
+	margin-left: 13%;
+}
+#submit,#cancel{
+	color: #fff;
+	
+	text-align: center;
+	width: 25%;
+	font-size: 25px;
+	border-radius: 5px;
+	outline: none;
+	border:0;
+	line-height: 30px;
+}
+#cancel{
+    background-color: #878787;
+    margin-left: 10%;
+    display: inline-block;
+}

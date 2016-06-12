@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清溪物流保税中心</title>
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="top">
+			<a href="/"><img src="../images/logo2.png" height="60px"> </a>
+		</div>
+		<div id="body-content">
+			<div id="sidebar" style="float:left">
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title">
+						<a href="#">清溪物流保税中心</a>
+					</h1>
+					<!-- Logo (221px wide) -->
+					<a href="/">
+						<!--<img alt="Xinze RRP logo" id="logo" src="../images/logo.png">-->
+					</a>
+					<!-- Sidebar Profile links -->
+					<div id="profile-links">
+						<!--	你好,
+						<a href="/me">user</a>
+						,
+						<span id="welcome_message">欢迎你</span>-->
+						<br>
+						<br>
+						<a href="adminHomepage.html">首页</a>
+						|
+						<a href="adminData.html">我的资料</a>
+						|
+						<a href="/signout">安全退出</a>
+					</div>
+					<div class="sidebar-menu">
+						<ul id="main-nav" class="nav nav-pills nav-stacked">
+							<!-- Accordion Menu -->
+							<li>
+								<a href="#me" class="nav-header collapsed nav-top-item" data-toggle="collapse">我的资料</a>
+								<ul class="nav nav-list collapse" id="me">
+									<li>
+										<a href="adminData.html" class="users_me users_modify ">我的资料</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#enterprises" class="nav-header collapsed nav-top-item" data-toggle="collapse">企业管理</a>
+								<ul class="nav nav-list collapse" id="enterprises">
+									<li>
+										<a href="enterprisesBackup.html" class="enterprisesRecording  ">企业备案</a>
+									</li>
+									<li>
+										<a href="enterprisesManagement.html" class="qualification">资质管理</a>
+									</li>
+									<li>
+										<a href="foreignEnterprisesManagement.html" class="mergeRelationship">归并关系管理</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="enterprisesInformationQuery">企业信息查询</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="vehicle">车辆备案</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="ICCard">IC卡备案</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#dictionary" class="nav-header collapsed nav-top-item" data-toggle="collapse" >数据字典</a>
+								<ul class="nav nav-list collapse" id="dictionary">
+									<li>
+										<a href="dictionary.html" class="dictionary">数据字典</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#inquery" class="nav-header collapsed nav-top-item" data-toggle="collapse">查询统计</a>
+								<ul class="nav nav-list collapse" id="inquery">
+									<li>
+										<a href="inquery.html">查询统计</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				             </div>
+				</div>
+			</div>
+			<!-- End #sidebar -->
+
+
+			<div id="main-content">
+				<h2>Welcome, <span id="userName"></span></h2>
+				<p id="page-intro">
+				What would you like to do?
+				</p>
+				<ul class="shortcut-buttons-set">
+					<li>
+						<a class="shortcut-button" href="adminInformation.html">
+							<span> 
+							<img alt="icon" src="../images/icons/pencil_48.png" />
+							<br />
+							我的资料 
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="newEnterprisesBackup">
+							<span> <img alt="icon" src="../images/icons/pencil_48.png" />
+							<br />
+							新增企业备案
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="dictionary.html">
+							<span> <img alt="icon" src="../images/icons/paper_content_pencil_48.png" />
+							<br />
+							数据字典
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="inquery.html">
+						 	<span> <img alt="icon" src="../images/icons/comment_48.png" />
+							<br />
+							查询统计
+							</span>
+						</a>
+					</li>
+				</ul><!-- End .shortcut-buttons-set -->
+				<div class="clear"></div>
+				<div id="footer">
+					<small>&#169;版权所有    2016   ，广州中长康达信息技术有限公司，粤ICP备06036366号 </small>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script src="../js/jquery-1.10.2.js"></script>
+	<script src="../js/jquery.params.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		 $(function(){
+                    var name = $.query.get("username");
+                    $("#userName").html(name );
+    
+             });
+	</script>
+</body>
+</html>

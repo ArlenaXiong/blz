@@ -1,0 +1,50 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>登录页面</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/login.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<form id="loginForm">
+	<input type="text" id="username" name="userName"/>
+	<input type="password" id="password" name="Password"/>
+	<input type="button" id="submit" name="submit"/>
+</form>
+<script type="text/javascript">
+	$("#submit").on('click',function(){
+        alert("通过！");
+        var user = {
+            manager : {
+                username:$("#username").val(),
+                password:$("#password").val()
+            }
+        }
+		$.ajax({
+			type:"post",
+			url: "loginAction.action",
+			dataType:"json",
+			contentType : "application/json;charset=UTF-8",
+			data:JSON.stringify(user),
+			success: function() {
+				//location.href = request.getContextPath()+"index.jsp";
+                location.href = "http://localhost:8080/index.jsp";
+			},
+			error: function(){
+				alert("异常！")
+			}
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+#sidebar{
+	background:url(../images/bg-sidebar.gif) top left no-repeat;
+	background-size: 200px;
+	width:200px;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	color:#888;
+	font-size:12px;
+}
+#sidebar #main-nav ul li a:hover, #sidebar #main-nav ul li a.current, #sidebar #main-nav ul li a.current:hover {
+    color: #fff;
+}
+#sidebar #main-nav ul li a.current {
+    background: transparent url(../images/menu-current-arrow.gif) right center no-repeat !important;
+     font-weight: bold;
+}
+
+#sidebar #sidebar-wrapper{
+	margin:10px 0 10px 9px;
+
+}
+
+#sidebar #sidebar-title{
+	margin:40px 0 40px 15px;
+}
+
+#sidebar a,#sidebar a:active{
+	color:#ccc;
+}
+
+#sidebar #logo{
+	margin:20px 0 20px 0;
+}
+
+#sidebar #profile-links{
+	padding:0 15px 20px 15px;
+	text-align:right;
+	line-height:1.5em
+}
+
+#sidebar #main-nav{
+	width:176px;
+	padding:0;
+	margin:0 0 0 15px;
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+#sidebar #main-nav li{
+	list-style:none;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+#sidebar #main-nav li a.nav-top-item{
+	background:transparent url(../images/bg-menu-item-green.jpg) right center no-repeat;
+	padding:10px 15px;
+	color:#fff;
+	font-size:14px;
+	cursor:pointer;
+	display:block;
+	text-decoration:none;
+}
+
+#sidebar #main-nav ul{
+	padding:0;
+	font-size:12px;
+	margin:0;
+}
+
+#sidebar #main-nav ul li{
+	list-style:none;
+	margin:0;
+	text-align:right;
+	padding:0;
+}
+
+#sidebar #main-nav ul li a{
+	padding:8px 15px;
+	display:block;
+	color:#aaa;
+	font-size:13px;
+	line-height:1.2em;
+}

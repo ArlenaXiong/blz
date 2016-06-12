@@ -1,0 +1,26 @@
+body,p,div,h1,h2,h3,h3,h5,h6,form,button,input,label,ul,li,a{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #878787;
+}
+li{
+	list-style: none;
+}
+#back{
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 40px;
+	text-align: center;
+	display: inline-block;
+	background-color: lightgreen;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	color: #8e8e8e;
+	z-index: 100;
+	font-size: 28px;
+}

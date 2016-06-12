@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>清溪物流保税中心</title>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../css/nav.css">
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="top">
+			<a href="/"><img src="../images/logo2.png" height="60px"> </a>
+		</div>
+		<div id="body-content">
+			<div id="sidebar" >
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title">
+						<a href="#">清溪物流保税中心</a>
+					</h1>
+					<!-- Logo (221px wide) -->
+					<a href="/">
+						<!--<img alt="Xinze RRP logo" id="logo" src="../images/logo.png">-->
+					</a>
+					<!-- Sidebar Profile links -->
+					<div id="profile-links">
+						<!--	你好,
+						<a href="/me">user</a>
+						,
+						<span id="welcome_message">欢迎你</span>-->
+						<br>
+						<br>
+						<a href="adminHomepage.html">首页</a>
+						|
+						<a href="adminData.html">我的资料</a>
+						|
+						<a href="/signout">安全退出</a>
+					</div>
+					<div class="sidebar-menu">
+						<ul id="main-nav" class="nav nav-pills nav-stacked">
+							<!-- Accordion Menu -->
+							<li>
+								<a href="#me" class="nav-header collapsed nav-top-item" data-toggle="collapse">我的资料</a>
+								<ul class="nav nav-list collapse" id="me">
+									<li>
+										<a href="adminData.html" class="users_me users_modify current">我的资料</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#enterprises" class="nav-header collapsed nav-top-item" data-toggle="collapse">企业管理</a>
+								<ul class="nav nav-list collapse" id="enterprises">
+									<li>
+										<a href="enterprisesBackup.html" class="enterprisesBackup current">企业备案</a>
+									</li>
+									<li>	
+										<a href="enterprisesManagement.html" class="qualification">资质管理</a>
+									</li>
+									<li>
+										<a href="foreignEnterprisesManagement.html" class="mergeRelationship">归并关系管理</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="enterprisesInformationQuery">企业信息查询</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="vehicle">车辆备案</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="ICCard">IC卡备案</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#dictionary" class="nav-header collapsed nav-top-item" data-toggle="collapse" >数据字典</a>
+								<ul class="nav nav-list collapse" id="dictionary">
+									<li>
+										<a href="dictionary.html" class="dictionary">数据字典</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#inquery" class="nav-header collapsed nav-top-item" data-toggle="collapse">查询统计</a>
+								<ul class="nav nav-list collapse" id="inquery">
+									<li>
+										<a href="inquery.html">查询统计</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				             </div>
+				</div>
+			</div>
+			<!-- End #sidebar -->
+						
+	
+			<div id="main-content" style="padding-top:10px">
+				<!-- Main Content Section with everything -->
+				<noscript>
+					<!-- Show a notification if the user has disabled javascript -->
+					<div class="notification error png_bg">
+						<div>
+							Javascript is disabled or is not supported by your browser. Please <a href="http://browsehappy.com/" title="Upgrade to a better browser">upgrade</a> your browser or <a href="http://www.google.com/support/bin/answer.py?answer=23852" title="Enable Javascript in your browser">enable</a> Javascript to navigate the interface properly.
+							Download From <a href="http://www.exet.tk">exet.tk</a>
+						</div>
+					</div>
+				</noscript>
+				
+				<ul class="nav nav-tabs  ">
+				   <li class="active navigation"><a href="enterprisesBackup.html" >企业备案申请</a></li>
+				   <li class="navigation"><a href="enterprisesBackupChange.html">企业变更申请</a></li>
+				   <li class="navigation"><a href="enterprisesInquiry.html">企业备案查询</a></li>
+				</ul>
+				
+				<div class="content-box" style="margin-top:10px">
+
+					<div class="content-box-header">
+						<h3>企业备案</h3>
+					<!--	<div class="operations">
+							<a href="adminDataModify.html">修改密码</a> 
+						</div>-->
+						<div class="operation">
+							<form>
+								<input class="button"  value="新增" name="commit" type="button" id="newBackup" / >
+								<input class="button"  value="暂存" name="commit" type="button" />
+								<input class="button"  value="修改" name="commit" type="button" />
+								<input class="button"  value="申报" name="commit" type="button" />
+							</form>
+						</div>
+					</div>				
+					<div class="content-box-content">
+						<div class="tab-content default-tab">
+							<form>
+								<fieldset>
+									<legend>基本信息：</legend>	
+									<div class="filed">
+										<label for="recordNum">预录入号</label>
+										<input class="text-input small-input" id="recordNum" name="recordNum" size="30" type="text" style="height:25px" style:"display:inline-block"/>
+									</div>
+									<div class="filed">
+										<label for="recordDate">录入日期</label>
+										<input class="text-input small-input" id="recordDate" name="recordDate" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="applyDate">申报日期</label>
+										<input class="text-input small-input" id="applyDate" name="applyDate" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="company_name">名称</label>
+										<input class="text-input small-input" id="company_name" name="company_name" size="30" type="text" style="height:25px ;width:564px" />
+									</div>
+									<div class="filed">
+										<label for="credit_code">信用代码十八位</label>
+										<input class="text-input small-input" id="credit_code" name="credit_code" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="address">住所</label>
+										<input class="text-input small-input" id="address" name="address" size="30" type="text" style="height:25px;width:564px" />
+									</div>
+									<div class="filed">
+										<label for="type">类型</label>
+										<input class="text-input small-input" id="type" name="type" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="business_scope">经营范围</label>
+										<input class="text-input small-input" id="business_scope" name="business_scope" size="30" type="text" style="height:25px;width:898px" />
+									</div>
+									<div class="filed">
+										<label for="legal_representative">法定代理人</label>
+										<input class="text-input small-input" id="legal_representative" name="legal_representative" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="registered_capital">注册资本</label>
+										<input class="text-input small-input" id="registered_capital" name="registered_capital" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="establish_date">成立日期</label>
+										<input class="text-input small-input" id="establish_date" name="establish_date" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="business_term">营业期限</label>
+										<input class="text-input small-input" id="business_term" name="business_term" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="registration_authority">注册机关</label>
+										<input class="text-input small-input" id="registration_authority" name="registration_authority" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="registration_date">登记日期</label>
+										<input class="text-input small-input" id="registration_date" name="registration_date" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="link_man">联系人</label>
+										<input class="text-input small-input" id="link_man" name="link_man" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="telephone">办公电话</label>
+										<input class="text-input small-input" id="telephone" name="telephone" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="phone_number">手机号码</label>
+										<input class="text-input small-input" id="phone_number" name="phone_number" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="bank">开户银行</label>
+										<input class="text-input small-input" id="bank" name="bank" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="bank_account">开户账号</label>
+										<input class="text-input small-input" id="bank_account" name="bank_account" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="zip_code">邮政编码</label>
+										<input class="text-input small-input" id="zip_code" name="zip_code" size="30" type="text" style="height:25px" />
+									</div>
+
+								</fieldset>
+								<fieldset>
+									<legend></legend>
+									<div class="filed">
+										<label for="trade_code">贸易备案号</label>
+										<input class="text-input small-input" id="trade_code" name="trade_code" size="30" type="text" style="height:25px" />
+									</div>
+										<div class="filed">
+										<label for="import_export_code">进出口代码</label>
+										<input class="text-input small-input" id="import_export_code" name="import_export_code" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="email">电子邮箱</label>
+										<input class="text-input small-input" id="email" name="email" size="30" type="text" style="height:25px" />
+									</div>	
+									<div class="filed">
+										<label for="english_name">英文名称</label>
+										<input class="text-input small-input" id="english_name" name="english_name" size="30" type="text" style="height:25px;width:564px" />
+									</div>	
+									<div class="filed">
+										<label for="IDcard">法人证件号</label>
+										<input class="text-input small-input" id="IDcard" name="IDcard" size="30" type="text" style="height:25px" />
+									</div>	
+									<div class="filed">
+										<label for="english_address">英文住所</label>
+										<input class="text-input small-input" id="english_address" name="english_address" size="30" type="text" style="height:25px;width:564px" />
+									</div>	
+									<div class="filed">
+										<label for="trade_registration_date">备案登记日</label>
+										<input class="text-input small-input" id="trade_registration_date" name="trade_registration_date" size="30" type="text" style="height:25px" />
+									</div>				
+								</fieldset>
+								<fieldset>
+									<legend></legend>
+									<div class="filed">
+										<label for="registration_costoms">注册地海关</label>
+										<input class="text-input small-input" id="registration_costoms" name="registration_costoms" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="customs_code">海关十位编码</label>
+										<input class="text-input small-input" id="customs_code" name="customs_code" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="cotoms_registration_date">海关注册日期</label>
+										<input class="text-input small-input" id="costoms_registration_date" name="costoms_registration_date" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="credit_grade">企业信用等级</label>
+										<input class="text-input small-input" id="credit_grade" name="credit_grade" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="grade_updated_date">等级调整时间</label>
+										<input class="text-input small-input" id="grade_updated_date" name="grade_updated_date" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="is_deregistration">注销标志</label>
+										<input class="text-input small-input" id="is_deregistration" name="is_deregistration" size="30" type="text" style="height:25px" />
+									</div>
+								</fieldset>
+								<fieldset>
+								  	<legend></legend>
+								  	<div class="filed">
+										<label for="warehouseNum">仓库序号</label>
+										<input class="text-input small-input" id="warehouseNum" name="warehouseNum" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="unified_code">统一编号</label>
+										<input class="text-input small-input" id="unified_code" name="unified_code" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="logistic_method">保税方式</label>
+										<input class="text-input small-input" id="logistic_method" name="logistic_method" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="warehouseName">仓库名称</label>
+										<input class="text-input small-input" id="warehouseNamelogistic_method" name="warehouseName" size="30" type="text" style="height:25px;width:564px" />
+									</div>
+									<div class="filed">
+										<label for="warehouseArea">仓库面积</label>
+										<input class="text-input small-input" id="warehouseArea" name="warehouseArea" size="30" type="text" style="height:25px;width:126px" />
+										<label>平方米</label>
+									</div>
+									<div class="filed">
+		     								<label for="warehouseAddress">仓库地址</label>
+										<input class="text-input small-input" id="warehouseAddress" name="warehouseAddress" size="30" type="text" style="height:25px;width:564px" />
+									</div>
+									<div class="filed">
+										<label for="warehouseCapacity">仓库容积</label>
+										<input class="text-input small-input" id="warehouseCapacity" name="warehouseCapacity" size="30" type="text" style="height:25px;width:126px" />
+										<label>立方米</label>
+									</div>
+									<div class="filed">
+										<label for="wareHouseCategory">仓库类型</label>
+										<input class="text-input small-input" id="wareHouseCategory" name="wareHouseCategory" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="rented_date">仓库起租</label>
+										<input class="text-input small-input" id="rented_date" name="rented_date" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="rented_term">仓储期限</label>
+										<input class="text-input small-input" id="rented_term" name="rented_term" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="wh_code">仓库代码</label>
+										<input class="text-input small-input" id="wh_code" name="wh_code" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="book_status">账册状态</label>
+										<input class="text-input small-input" id="book_status" name="book_status" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="place_type">场所类别</label>
+										<input class="text-input small-input" id="place_type" name="place_type" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="book_no">仓库账册号</label>
+										<input class="text-input small-input" id="book_no" name="book_no" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="expiration_date">账册有效期</label>
+										<input class="text-input small-input" id="expiration_date" name="expiration_date" size="30" type="text" style="height:25px" />
+									</div>
+									<div class="filed">
+										<label for="remark">备注</label>
+										<input class="text-input small-input" id="remark" name="remark" size="30" type="text" style="height:25px" />
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div id="footer">
+				<small>&#169;版权所有    2016   ，广州中长康达信息技术有限公司，粤ICP备06036366号 </small>
+				</div>
+			</div>
+		</div>	
+	</div>
+      
+	<script src="../js/jquery-1.10.2.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){$("#enterprises").collapse("show");});
+	</script>
+</body>
+</html>
